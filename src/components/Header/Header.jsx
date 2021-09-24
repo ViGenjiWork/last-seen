@@ -11,7 +11,7 @@ export const Header = ({ onCLickCart }) => {
         <header>
             <nav>
                 <ul>
-                    <li><Link to="/last-seen"><img src={logo} alt="Logo" /></Link></li>
+                    <li><Link to="/last-seen/"><img src={logo} alt="Logo" /></Link></li>
                     <li onClick={onCLickCart} style={{ marginTop: "10px" }}>Cart</li>
                 </ul>
             </nav>

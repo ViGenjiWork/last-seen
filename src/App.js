@@ -4,7 +4,7 @@ import './App.scss';
 
 import { Header } from './components/Header/Header';
 import { Home } from './pages/Home';
-import { Route } from 'react-router-dom';
+import {Redirect, Route, Switch} from 'react-router-dom';
 import { Product } from './pages/Product';
 import { Cart } from './components/Cart/Cart';
 import axios from 'axios';
@@ -69,9 +69,13 @@ function App() {
           onCloseCart={() => setCartOpened(!cartOpened)}
           removeCartItem={removeCartItem}
         />
-        <Route exact path='/last-seen/'>
-          <Home />
-        </Route>
+        <Switch>
+            <Redirect from='/last-seen/' to="/last-seen" />
+              <Route exact path='/last-seen/'>
+                <Home />
+              </Route>
+        </Switch>
+
         <Route path={`/products/`} >
           <Product />
         </Route>
