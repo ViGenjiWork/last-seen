@@ -1,0 +1,30 @@
+.good-wrapper {
+    margin: 0 auto;
+    width: 950px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .info {
+        width: 350px;
+        .title {
+            font-size: 24px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            word-spacing: 2px;
+        }
+        .price {
+            margin-top: 10px;
+            font-size: 20px;
+            font-weight: 600;
+        }
+    }
+}
+
+.chooseSize {
+    margin-top: 10px;
+    width: 100%;
+    select {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.3);
+    }
+}

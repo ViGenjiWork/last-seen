@@ -1,0 +1,17 @@
+[{
+        "id": 1,
+        "title": "Last Seen Pure White",
+        "price": 8000,
+        "imageURL": "./images/pure-white.jpg",
+        "hoverImageURL": "./images/pure-white-hover.jpg",
+        "total": 1,
+    },
+    {
+        "id": 2,
+        "title": "Last Seen Pure Grey",
+        "price": 9000,
+        "imageURL": "./images/pure-grey.jpg",
+        "hoverImageURL": "./images/pure-grey-hover.jpg",
+        "total": 0
+    }
+]

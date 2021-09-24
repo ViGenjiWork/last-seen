@@ -1,0 +1,32 @@
+.container {
+    box-sizing: border-box;
+    max-width: 550px;
+    padding: 0px 40px;
+    background: #fff;
+    .slick-prev:before,
+    .slick-next:before {
+        height: 100%;
+        opacity: 0;
+        transition: opacity .3s;
+        color: #000;
+    }
+}
+
+.container:hover {
+    .slick-prev:before,
+    .slick-next:before {
+        height: 100%;
+        opacity: 1;
+        transition: opacity .3s;
+        color: #000;
+        background-color: #fff;
+    }
+}
+
+.slick-slide:active {
+    outline: none;
+}
+
+.slick-arrow {
+    height: 100% !important;
+}
