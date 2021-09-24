@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 import './Header.scss'
+import logo from './../../assets/images/logo.jpg'
 
 
 export const Header = ({ onCLickCart }) => {
@@ -10,8 +11,7 @@ export const Header = ({ onCLickCart }) => {
         <header>
             <nav>
                 <ul>
-                    <li><Link to="/"><img src="./../images/logo.jpg" alt="Logo" /></Link></li>
-                    <li><Link to="/ru">Russian</Link>&nbsp;/&nbsp;<Link to="/en">English</Link></li>
+                    <li><Link to="/last-seen"><img src={logo} alt="Logo" /></Link></li>
                     <li onClick={onCLickCart} style={{ marginTop: "10px" }}>Cart</li>
                 </ul>
             </nav>

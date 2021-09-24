@@ -69,7 +69,7 @@ function App() {
           onCloseCart={() => setCartOpened(!cartOpened)}
           removeCartItem={removeCartItem}
         />
-        <Route exact path='/'>
+        <Route exact path='/last-seen'>
           <Home />
         </Route>
         <Route path={`/products/`} >

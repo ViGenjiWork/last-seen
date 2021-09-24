@@ -20,7 +20,7 @@ export const Card = ({ id, title, imageURL, hoverImageURL, price, total }) => {
                 <div className="image">
                     <img
                         src={imageURL}
-                        alt="good"
+                        alt={title}
                         onMouseOver={e => e.currentTarget.src = hoverImageURL}
                         onMouseOut={e => e.currentTarget.src = imageURL}
                     />
